@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <script src="./scripts/aws-cognito-sdk.min.js"></script>
+        <script src="./scripts/amazon-cognito-identity.min.js"></script>
+    </head>
+    <body>
+        <div>
+            <h1>Current User</h1>
+            <p id="username"></p>
+        </div>
+        <div>
+            <h1>Sign Up Form</h1>
+            <form>
+                <label>Email</label>
+                <input type="text" name="email" id="email-input"/>
+                <label>Password</label>
+                <input type="password" name="password" id="password-input"/>
+
+                <br/>
+                <input type="submit" id="signup-submit-button" />
+            </form>
+        </div>
+
+        <div>
+            <h1>Confirmation Form</h1>
+            <form>
+                <label>Confirmation Number</label>
+                <input type="text" name="confirmation" id="confirmation-code-input"/>
+                <input type="submit" id="confirmation-submit-button"/>
+            </form>
+        </div>
+
+
+
+        <!--<div>
+            <h1>Logging In</h1>
+            <form>
+                <label>Log In</label>
+                <input type="text" name="email" id="login-email-input"/>
+                <input type="password" name="password" id="login-password-input"/>
+                <input type="submit" id="login-submit-button"/>
+            </form>
+        </div>-->
+
+<!--
+        <div>
+            <h1>Logging Out</h1>
+            <label>Log Out</label>
+            <button id="logout-submit-button">Log Out</button>
+        </div>-->
+
+
+        <!--<div>
+            <h1>Forgot Password</h1>
+            <form>
+                <label>Your Email</label>
+                <input type="text" name="forgot-email" id="forgot-email-input"/>
+                <input type="submit" id="request-reset-button" value="Request Code"/>
+            </form>
+            <form>
+                <label>Reset Code</label>
+                <input type="text" name="reset-code" id="reset-code-input"/>
+                <br/>
+                <label>New Password</label>
+                <input type="password" name="new-password" id="new-password-input"/>
+                <input type="submit" id="forgot-submit-button"/>
+            </form>
+        </div>-->
+
+
+
+        <script src="./scripts/app.js"></script>
+        <script src="./scripts/signup.js"></script>
+        <script src="./scripts/confirmation.js"></script>
+        <script src="./scripts/sessions.js"></script>
+        <script src="./scripts/login-logout.js"></script>
+        <script src="./scripts/forgot-password.js"></script>
+    </body>
+</html>
